@@ -16,10 +16,6 @@
   display: none !important;
 }
 
-body {
-  min-height: 1200px;
-}
-
 .my-nav {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
 }
@@ -40,6 +36,13 @@ body {
   opacity: 0.75;
 }
 
+.navbar-in-top {
+  background: #0d2b38;
+  background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
+  padding-bottom: 140px !important;
+  box-shadow: 0px 0px;
+}
+
 .fullBackground {
   background-position: center center;
   background-attachment: fixed;
@@ -56,9 +59,15 @@ body {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 220px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.main {
+  background-color: rgba(13, 43, 56, 0.25);
+  opacity: 25%;
+  height: 100vh;
 }
 
 /*!
