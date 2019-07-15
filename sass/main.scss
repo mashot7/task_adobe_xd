@@ -62,6 +62,14 @@ $container-max-widths: (
     }
 }
 
+.navbar-in-top {
+    background: rgb(13,43,56);
+    background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
+    padding-bottom: 140px !important;
+    box-shadow: 0px 0px;
+}
+
+
 // Header Slider
 .fullBackground {
     background-position: center center;
