@@ -4,6 +4,14 @@
 * {
     box-sizing: border-box !important;
 }
+
+//#414849
+//#6c757d
+$gray-600: #414849 !default;
+
+//Type.scss
+$h6-font-size: 1.125em;
+
 // $body-bg: #FCFCFC;
 $body-bg: rgb(145, 145, 145);
 $font-family-base: Open Sans;
@@ -65,8 +73,9 @@ $container-max-widths: (
 .navbar-in-top {
     background: rgb(13,43,56);
     background: linear-gradient(180deg, rgba(13, 43, 56, 0.75) 0%, rgba(13, 43, 56, 0) 100%);
-    padding-bottom: 140px !important;
+    padding-bottom: 8% !important;
     box-shadow: 0px 0px;
+    border-bottom: 1px blue dotted;
 }
 
 
@@ -82,14 +91,34 @@ $container-max-widths: (
     height: 100%;
 }
 
-.caption {
-    font-size: 30pt;
-    text-transform: uppercase;
-    color: #fff;
-    position: absolute;
-    top: 220px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.icons-div {
+    border-radius: 50%;
+}
+ .font-weight-semibold {
+     font-weight: 600;
+ }
+//.caption {
+//    font-size: 30pt;
+//    text-transform: uppercase;
+//    color: #fff;
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//}
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+ .caption-my {
+     padding-top: 13%;
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
 }
 
 .main {
@@ -97,7 +126,10 @@ $container-max-widths: (
     opacity: 25%;
     height: 100vh;
 }
-  
+
+.bg-light-1 {
+    background-color: #FCFCFC;
+}
 //   .caption:after {
 //     content:"\A";
 //     width:10px;
@@ -107,7 +139,6 @@ $container-max-widths: (
 //     display: inline-block;
 //     margin: 0 0 -2px;
 //   }
-  
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
