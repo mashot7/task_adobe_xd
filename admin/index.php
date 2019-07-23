@@ -26,13 +26,40 @@ if (Input::exist()) {
 }
 // Login End------------------------------------------------------------------------------------------
 
+$request = new Request();
 $user = new User();
 require_once 'header.php';
 require_once 'navbar.php';
 if ($user->isLoggedIn()) {
 	?>
 	<div class="container">
-		<h5>ВЫ В ПАНЕЛЕ УПРАВЛЕНИЯ</h5>
+		<table>
+			<thead>
+			<tr>
+				<th>Имя</th>
+				<th>Email</th>
+				<th>Телефон</th>
+			</tr>
+			</thead>
+
+			<tbody>
+      <?php
+
+      $results = $request->showRequests()->results();
+      foreach ($results as $result) {
+        echo '
+        <tr>
+          <td>' . $result->name . '</td>
+          <td>' . $result->email . '</td>
+          <td>' . $result->telephone . '</td>
+        </tr>
+        ';
+      }
+      ?>
+
+			</tbody>
+		</table>
+
 	</div>
 	<?php
 } else {

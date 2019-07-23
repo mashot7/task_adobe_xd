@@ -7,8 +7,7 @@ if ($user->isLoggedIn()) {
 			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 			<a href="#" style="padding-left: 5px" class="brand-logo">LinguaSky</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="/admin/index.php">Главная</a></li>
-				<li><a href="/admin/requests.php">Запросы</a></li>
+				<li><a href="/admin/index.php">Запросы</a></li>
 				<li><a href="/admin/changepassword.php">Изменить Пароль</a></li>
 				<li><a href="/admin/logout.php">Выход</a></li>
 			</ul>
@@ -20,8 +19,7 @@ if ($user->isLoggedIn()) {
 			<a href="#" style="padding-left: 5px" class="black-text">LinguaSky</a>
 		</h4>
 		<ul>
-			<li><a href="/admin/index.php">Главная</a></li>
-			<li><a href="/admin/requests.php">Запросы</a></li>
+			<li><a href="/admin/index.php">Запросы</a></li>
 			<li><a href="/admin/changepassword.php">Изменить Пароль</a></li>
 			<li><a href="/admin/logout.php">Выход</a></li>
 		</ul>
