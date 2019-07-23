@@ -45,7 +45,7 @@ try {
   $conn->exec($sql);
   $sql =
     "INSERT INTO `users` (`id`, `username`, `password`, `salt`) VALUES
-(1, 'linguaskyAdmin', '4f657000626ba34794703720e1e26affc07af55651ffe55d65613fb6560f7741', 'd95b6f8ff7f6cbc2ba16aaa7ed931185')";
+(1, 'linguaskyAdmin', 'bbfc0e361b14718bb6c8e4fc5ab12a5c258fdfe2056f18c9997a8bdfeae01d56', '50851cb066a86f164bdc61d3c9283b31')";
   $conn->exec($sql);
 } catch (PDOException $e) {
 }

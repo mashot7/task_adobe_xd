@@ -4,9 +4,9 @@ session_start();
 $GLOBALS['config'] = array(
   'mysql' => array(
     'host' => '127.0.0.1',
-    'username' => 'root',
-    'password' => '',
-    'db' => 'linguasky'
+    'username' => 'kingpara_ls',
+    'password' => 'lingua123',
+    'db' => 'kingpara_linguasky'
   ),
   'remember' => array(
     'cookie_name' => 'hash',
