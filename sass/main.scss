@@ -1,13 +1,33 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@font-face {
+  font-family: "Segoe Print";
+  src: url("/css/fonts/segoepr.ttf") format('ttf');
+}
 
 * {
   box-sizing: border-box !important;
+  //overflow-x: hidden;
 }
-
+body {
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
+}
+
+// Set Default variables values
+//$font-size-base: 1em;
+//$h1-font-size: $font-size-base * 2.5 !default;
+//$h2-font-size: $font-size-base * 2 !default;
+//$h3-font-size: $font-size-base * 1.75 !default;
+//$h4-font-size: $font-size-base * 1.5 !default;
+//$h5-font-size: $font-size-base * 1.25 !default;
+//$h6-font-size: $font-size-base !default;
+p.caca {
+  font-size: calc(12px + 1vw) !important;
+  color: #fff !important;
 }
 
 $blue: #1663D5 !default;
@@ -148,9 +168,6 @@ $navbar-padding-y: 20px;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -191,6 +208,7 @@ $navbar-padding-y: 20px;
   background-color: #fff;
   border-radius: 8px;
   min-height: 170px;
+
   img {
     border-radius: 8px 8px 0 0;
   }
@@ -223,8 +241,10 @@ $navbar-padding-y: 20px;
 .section-3 ul {
   list-style: none;
   padding: 0 !important;
+
   li {
     position: relative;
+
     &:before {
       //left: 5px;
       vertical-align: middle;
@@ -463,6 +483,7 @@ $navbar-padding-y: 20px;
     padding: 12px 35px 13px 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     opacity: 1;
+
     &:hover {
       opacity: 0.9;
     }

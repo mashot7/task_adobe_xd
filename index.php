@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -8,8 +7,11 @@
 	<title>Linguasky</title>
 	<link href="css/main.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+	<link href="//db.onlinewebfonts.com/c/9cb830e3472ffe12fb4943f3ed80832f?family=Segoe+Print" rel="stylesheet"
+	      type="text/css"/>
+
 </head>
-<body class="fullBackground" style="background-repeat: no-repeat;">
+<body>
 <nav class="fixed-top navbar navbar-expand-lg navbar-light my-nav navbar-in-top">
 	<div class="container">
 		<a class="navbar-brand my-brand" href="#">
@@ -47,7 +49,7 @@
 	</div>
 </nav>
 
-<header id="1" class="container2">
+<header id="1" class="fullBackground" style="background-repeat: no-repeat;">
 	<div class="main">
 		<div class="caption-my text-center container">
 			<h1 class="font-weight-bold text-white main-title">АНГЛИЙСКИЙ ЯЗЫК ОНЛАЙН</h1>
@@ -128,17 +130,18 @@
 
 
 	</div>
+	<div class="down-arrow text-center" style="position: absolute; left: 50%; bottom: 15px;">
+		<a href="#section-1" id="section-1">
+			<img alt="" src="assets/down-arrow.svg">
+		</a>
+	</div>
+
 </header>
-<div class="down-arrow text-center" style="position: absolute; left: 50%; bottom: 15px;">
-	<a href="#section-1" id="section-1">
-		<img alt="" src="assets/down-arrow.svg">
-	</a>
-</div>
+
 <div class="fab-container">
-	<button class="btn btn-1 fab position-relative" style="font-family: 'Open Sans'">Задайте вопрос<img class="help-img"
-	                                                                                                    src="assets/fab_help.svg"
-	                                                                                                    alt=""
-	                                                                                                    style="position: absolute; right: 5px; top: 50%; transform: translate(0%, -50%)">
+	<button class="btn btn-1 fab position-relative" style="font-family: 'Open Sans'">Задайте вопрос
+		<img class="help-img" src="assets/fab_help.svg" alt=""
+		     style="position: absolute; right: 5px; top: 50%; transform: translate(0%, -50%)">
 	</button>
 	<button class="btn btn-2 fab closeBtn"
 	        style="height: 44px; width: 44px; background-color:#414849; border-radius: 100%"></button>
@@ -269,83 +272,92 @@
 	</ul>
 </div>
 <div class="bg-light-1">
-	<section id="freeLesson" class="page-section bg-transparent mb-0" style="padding-top: 5%;">
-		<div class="container">
+	<!-- ПРОЙДИТЕ БЕСПЛАТНЫЙ ВВОДНЫЙ УРОК 100%	-->
+	<section id="freeLesson" class="page-section bg-transparent pt-5">
+		<div class="container pt-5">
 			<h1 class="text-center text-secondary font-weight-bold pb-5">ПРОЙДИТЕ БЕСПЛАТНЫЙ ВВОДНЫЙ УРОК</h1>
-			<hr class="mt-5">
+			<hr class="p-0 m-0">
 			<div class="row justify-content-between">
-				<div class="col-md-4 text-center">
-					<img alt="" class="bg-light-1" src="assets/target.svg" style="transform: translate(0%, -91%)">
+				<div class="col-md-4 text-center pb-5">
+					<img alt="" class="bg-light-1" src="assets/target.svg" style="transform: translate(0%, -55%)">
+					<!--  style="transform: translate(0%, -91%)" -->
 					<p class="text-secondary font-weight-semibold">Сформируем<br>цели</p>
 				</div>
-				<div class="col-md-4 text-center">
-					<img alt="" class="bg-light-1" src="assets/thought.svg" style="transform: translate(0%, -91%)">
+				<div class="col-md-4 text-center pb-5">
+					<hr class="p-0 m-0 d-md-none">
+					<img alt="" class="bg-light-1" src="assets/thought.svg" style="transform: translate(0%, -50%)">
+					<!--  style="transform: translate(0%, -91%)" -->
 					<p class="text-secondary font-weight-semibold">Определим уровень<br>знаний</p>
 				</div>
-				<div class="col-md-4 text-center">
-					<img alt="" class="bg-light-1" src="assets/computer.svg" style="transform: translate(0%, -91%)">
+				<div class="col-md-4 text-center pb-5">
+					<hr class="p-0 m-0 d-md-none">
+					<img alt="" class="bg-light-1" src="assets/computer.svg" style="transform: translate(0%, -50%)">
+					<!--  style="transform: translate(0%, -91%)" -->
 					<p class="text-secondary font-weight-semibold">Расскажем про<br>учебную платформу</p>
 				</div>
 			</div>
 			<section class="request-form mt-5 pb-5">
 				<form action="/admin/action.php" method="post">
-					<div class="row">
-						<div class="col">
+					<div class="row justify-content-between">
+						<div class="col-xs-12 col-lg-3 mt-4">
 							<input required class="form-control request-input" name="name" placeholder="Имя" type="text">
 						</div>
-						<div class="col">
+						<div class="col-xs-12 col-lg-3 mt-4">
 							<input required class="form-control request-input" name="email" placeholder="Email" type="email">
 						</div>
-						<div class="col">
+						<div class="col-xs-12 col-lg-3 mt-4">
 							<input required class="form-control request-input" name="telephone" placeholder="Телефон" type="text">
 						</div>
-						<button class="btn btn-primary col-xs-12" style="padding: 11px 66px;" type="submit">Оставьте заявку</button>
-					</div>
-					<div class="row d-flex justify-content-end mt-3 mb-3">
-					<span class="text-secondary" style="font-size: 14px; line-height: 19px;">нажимая, вы принимаете <a
-							class="text-secondary" style="text-decoration: underline" href="" data-toggle="modal"
-							data-target="#exampleModal">условия соглашения</a></span>
+						<div class="col-xs-12 col-lg-3 mt-4">
+							<button class="btn btn-primary col-xs-12" style="width: 100%;" type="submit">Оставьте заявку</button>
+						</div>
+						<div class="col-12 text-right">
+							<span class="text-secondary" style="font-size: 14px; line-height: 19px;">нажимая, вы принимаете <a
+									class="text-secondary" style="text-decoration: underline" href="" data-toggle="modal"
+									data-target="#exampleModal">условия соглашения</a></span>
+						</div>
 					</div>
 				</form>
 			</section>
 		</div>
 	</section>
 
-	<section id="2" class="page-section section-2 bg-white">
+	<!-- ЗАНИМАЙТЕСЬ С ПРЕПОДАВАТЕЛЕМ 100% -->
+	<section id="2" class="page-section section-2 bg-white pt-5">
 		<div class="container pt-5">
 			<div class="row">
-				<h1 class="text-left text-secondary font-weight-bold">ЗАНИМАЙТЕСЬ С ПРЕПОДАВАТЕЛЕМ</h1>
+				<h1 class="text-left text-secondary font-weight-bold pl-1">ЗАНИМАЙТЕСЬ С ПРЕПОДАВАТЕЛЕМ</h1>
 			</div>
 			<div class="row mt-4">
 				<div class="col-xs-12 col-xl-6 text-left">
 					<div class="row">
 						<div class="col-6 text-center p-4">
-							<div class="row">
-								<div class="col-12 col-shadow p-4">
+							<div class="row" style="height: 100%;">
+								<div class="col-12 col-shadow pt-4">
 									<img alt="" src="assets/section-2/classroom.svg">
 									<p class="mt-4 text-secondary">Методики лучших языковых школ мира</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-6 text-center p-4">
-							<div class="row">
-								<div class="col-12 col-shadow p-4">
+							<div class="row" style="height: 100%;">
+								<div class="col-12 col-shadow pt-4">
 									<img alt="" src="assets/section-2/award.svg">
 									<p class="mt-4 text-secondary">Сертифицированные педагоги</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-6 text-center pt-0 pb-4 pl-4 pr-4">
-							<div class="row">
-								<div class="col-12 col-shadow pt-4 pr-4 pl-4 pb-0">
+							<div class="row" style="height: 100%;">
+								<div class="col-12 col-shadow pt-4">
 									<img alt="" src="assets/section-2/light-bulb.svg">
 									<p class="mt-4 text-secondary">Каждый преподаватель мотивирует и следит за прогрессом</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-6 text-center pt-0 pb-4 pl-4 pr-4">
-							<div class="row">
-								<div class="col-12 col-shadow p-4">
+							<div class="row" style="height: 100%;">
+								<div class="col-12 col-shadow pt-4">
 									<img alt="" src="assets/section-2/calendar-with-a-clock-time-tools.svg">
 									<p class="mt-4 text-secondary">Вы сами выбираете удобное расписание</p>
 								</div>
@@ -357,20 +369,22 @@
 				<div class="col-xs-12 col-xl-6">
 					<div class="row" style="position: relative">
 						<div class="col-6 p-0" style="position: absolute">
-							<h1 style="font-size: 60px; color: #E3E3E3; line-height: 60px;"><span style="font-size: 150px;">47</span>
+							<h1 style="font-size: calc(20px + 2vh); color: #E3E3E3; line-height: 60px;"><span
+									style="font-size: 150px;">47</span>
 								учителей</h1>
 						</div>
 						<div class="banner-photo ml-auto" style="">
-							<img alt="" src="assets/section-2/teacher.png">
+							<img alt="" class="img-fluid" src="assets/section-2/teacher.png">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-<h1>HELLO</h1>
-	<!--Courses-->
-	<section class="section-3 bg-transparent">
+
+
+	<!-- Курсы английского языка в LinguaSky 100% -->
+	<section class="section-3 bg-transparent pt-5">
 		<div class="container pt-5">
 			<div class="row justify-content-center">
 				<h1 class="text-secondary font-weight-bold text-center">Курсы английского языка в LinguaSky</h1>
@@ -505,94 +519,80 @@
 			</div>
 		</div>
 	</section>
-	<!-- cards -->
-	<section id="3" class="page-section section-4 bg-light-1">
+
+
+	<!-- cards 100% -->
+	<section id="3" class="page-section section-4 bg-light-1 pt-5">
 		<div class="container pt-5">
 			<div class="row justify-content-center">
-				<h1 class="text-secondary font-weight-bold text-center">ТРЕНИРУЙТЕСЬ САМОСТОЯТЕЛЬНО</h1>
-				<p class="font-weight-semibold">Мы автоматизировали домашние задания и тренировки основных навыков, чтобы вы не
+				<h1 class="text-secondary font-weight-bold text-center pb-4">ТРЕНИРУЙТЕСЬ САМОСТОЯТЕЛЬНО</h1>
+				<p class="font-weight-semibold text-center">Мы автоматизировали домашние задания и тренировки основных навыков,
+					чтобы вы не
 					тратили время урока на рутину</p>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 pt-4 pl-4 pr-4">
-					<div class="row col-shadow courses-card">
+				<div class="col-xs-12 col-md-6 col-xl-4 p-2 p-md-4">
+					<div class="col-12 col-shadow" style="height: 100%">
 						<div class="row">
-							<div class="col position-relative">
-								<div class="position-absolute">
-									<div
-										style="height: 64px; width: 64px; border-radius: 50%; border: 2px #fff solid; margin-top: 1rem; margin-left: 1rem;">
-										<img src="assets/section-4/sub/sub-01.png" alt="" class="img-fluid">
-									</div>
-									<div
-										style="height: 64px; width: 64px; border-radius: 50%; border: 2px #fff solid; margin-top: 1rem; margin-left: 1rem;">
-										<img src="assets/section-4/sub/sub-02.png" alt="" class="img-fluid">
-									</div>
-									<div
-										style="height: 64px; width: 64px; border-radius: 50%; border: 2px #fff solid; margin-top: 1rem; margin-left: 1rem;">
-										<img src="assets/section-4/sub/sub-03.png" alt="" class="img-fluid">
-									</div>
+							<img src="assets/section-4/img-01.png" class="img-fluid" alt="">
+							<div class="position-absolute">
+								<div
+									style="height: 64px; width: 64px; border-radius: 50%; border: 2px #fff solid; margin-top: 1rem; margin-left: 1rem;">
+									<img src="assets/section-4/sub/sub-01.png" alt="" class="img-fluid">
 								</div>
-								<img src="assets/section-4/img-01.png" class="img-fluid" alt="Общайтесь с другими учениками">
+								<div
+									style="height: 64px; width: 64px; border-radius: 50%; border: 2px #fff solid; margin-top: 1rem; margin-left: 1rem;">
+									<img src="assets/section-4/sub/sub-02.png" alt="" class="img-fluid">
+								</div>
+								<div
+									style="height: 64px; width: 64px; border-radius: 50%; border: 2px #fff solid; margin-top: 1rem; margin-left: 1rem;">
+									<img src="assets/section-4/sub/sub-03.png" alt="" class="img-fluid">
+								</div>
 							</div>
 						</div>
-						<div class="row" style="min-height: 180px;">
-							<div class="col pt-4 pl-4 pr-4 pb-0">
-								<h6 class="text-secondary font-weight-bold pb-4 pl-2 pr-2">Общайтесь с другими учениками</h6>
-								<p class="mt-3 pl-2 pr-2">Посещайте бесплатные разговорные клубы онлайн</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 pt-4 pl-4 pr-4">
-					<div class="row col-shadow position-relative courses-card">
-						<div class="row p-0">
-							<div class="col">
-								<img src="assets/section-4/img-02.png" class="img-fluid" alt="Выполняете домашние задания">
-							</div>
-						</div>
-						<div class="row" style="min-height: 180px;">
-							<div class="col pt-4 pl-4 pr-4 pb-0">
-								<h6 class="text-secondary font-weight-bold pb-4 pl-2 pr-2">Выполняете домашние задания</h6>
-								<p class="mt-3 pl-2 pr-2">Закрепите полученные на уроке знания, выполняя домашние задания по каждой
-									теме</p>
-							</div>
+						<div class="row p-3">
+							<h6 class="font-weight-bold">Общайтесь с другими учениками</h6>
+							<p>Посещайте бесплатные разговорные клубы онлайн</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 pt-4 pl-4 pr-4">
-					<div class="row col-shadow position-relative courses-card">
-						<div class="row p-0">
-							<div class="col">
-								<img src="assets/section-4/img-03.png" class="img-fluid" alt="Разберите грамматику">
-							</div>
+				<div class="col-xs-12 col-md-6 col-xl-4 p-2 p-md-4">
+					<div class="col-12  col-shadow" style="height: 100%">
+						<div class="row">
+							<img src="assets/section-4/img-02.png" class="img-fluid" alt="">
 						</div>
-						<div class="row" style="min-height: 180px">
-							<div class="col pt-4 pl-4 pr-4 pb-0">
-								<h6 class="text-secondary font-weight-bold pb-4 pl-2 pr-2">Разберите грамматику</h6>
-								<p class="mt-3 pl-2 pr-2">Времена, артикли, глаголы, условные предложения и другие правила</p>
-							</div>
+						<div class="row p-3">
+							<h6 class="font-weight-bold">Выполняете домашние задания</h6>
+							<p>Закрепите полученные на уроке знания, выполняя домашние задания по каждой теме</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 pt-4 pl-4 pr-4">
-					<div class="row col-shadow position-relative courses-card">
-						<div class="row p-0">
-							<div class="col">
-								<img src="assets/section-4/img-04.png" class="img-fluid" alt="Учитесь всей семьей">
-							</div>
+				<div class="col-xs-12 col-md-6 col-xl-4 p-2 p-md-4">
+					<div class="col-12 col-shadow" style="height: 100%">
+						<div class="row">
+							<img src="assets/section-4/img-03.png" class="img-fluid" alt="">
 						</div>
-						<div class="row" style="min-height: 180px;">
-							<div class="col pt-4 pl-4 pr-4 pb-0">
-								<h6 class="text-secondary font-weight-bold pb-4 pl-2 pr-2">Учитесь всей семьей</h6>
-								<p class="mt-3 pl-2 pr-2">Увлекательные занятия для детей и взрослых</p>
-							</div>
+						<div class="row p-3">
+							<h6 class="font-weight-bold">Разберите грамматику</h6>
+							<p>Времена, артикли, глаголы, условные предложения и другие правила</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 pt-4 pl-4 pr-4">
-					<div class="row col-shadow position-relative courses-card">
-						<div class="col p-0">
-							<img src="assets/section-4/img-05.jpg" class="img-fluid" alt="Смотрите видео в оригинале, слушайте песни">
+				<div class="col-xs-12 col-md-6 col-xl-4 p-2 p-md-4">
+					<div class="col-12 col-shadow" style="height: 100%">
+						<div class="row">
+							<img src="assets/section-4/img-04.png" class="img-fluid" alt="">
+						</div>
+						<div class="row p-3">
+							<h6 class="font-weight-bold">Учитесь всей семьей</h6>
+							<p>Увлекательные занятия для детей и взрослых</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-xl-4 p-2 p-md-4">
+					<div class="col-12 col-shadow" style="height: 100%">
+						<div class="row position-relative">
+							<img src="assets/section-4/img-05.jpg" class="img-fluid" alt="">
 							<img src="assets/section-4/play-button.svg" class="img-fluid" alt=""
 							     style="height: 44px; width: 44px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; box-shadow: 0px 3px 6px rgba(0,0,0, 0.16)">
 							<p class="position-absolute text-white video-translate-text"
@@ -602,38 +602,29 @@
 							        style="bottom: 80px; left: 16px; font-size: 12px; padding: 7px 8px 8px 8px">Переводить
 							</button>
 						</div>
-						<div class="row" style="min-height: 180px;">
-							<div class="col pt-4 pl-4 pr-4 pb-0">
-								<h6 class="text-secondary font-weight-bold pb-1 pl-2 pr-2">Смотрите видео в оригинале, слушайте
-									песни</h6>
-								<p class="mt-3 pl-2 pr-2">Переводите субтитры к фильмам, слушайте любимых исполнителей и учите тексты
-									песен</p>
-							</div>
+						<div class="row p-3">
+							<h6 class="font-weight-bold">Смотрите видео в оригинале, слушайте песни</h6>
+							<p>Переводите субтитры к фильмам, слушайте любимых исполнителей и учите тексты песен</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 pt-4 pl-4 pr-4">
-					<div class="row col-shadow position-relative courses-card">
-						<div class="row p-0">
-							<div class="col">
-								<img src="assets/section-4/img-06.png" class="img-fluid" alt="Применяйте на практике полученные знания">
-							</div>
+				<div class="col-xs-12 col-md-6 col-xl-4 p-2 p-md-4">
+					<div class="col-12 col-shadow" style="height: 100%">
+						<div class="row">
+							<img src="assets/section-4/img-06.png" class="img-fluid" alt="">
 						</div>
-						<div class="row" style="min-height: 180px;">
-							<div class="col pt-4 pl-4 pr-4 pb-0">
-								<h6 class="text-secondary font-weight-bold pb-1 pl-2 pr-2">Применяйте на практике полученные знания</h6>
-								<p class="mt-3 pl-2 pr-2">Владея языком, вы можете поступить в вуз, сделать карьеру, путешествовать,
-									воплощать в
-									жизнь
-									мечты</p>
-							</div>
+						<div class="row p-3">
+							<h6 class="font-weight-bold">Применяйте на практике полученные знания</h6>
+							<p>Владея языком, вы можете поступить в вуз, сделать карьеру, путешествовать, воплощать в жизнь мечты</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--Price-->
+
+
+	<!-- СТОИМОСТЬ ОБУЧЕНИЯ 100% -->
 	<section class="section-5 bg-transparent pt-5 pb-5">
 		<div class="container pt-5 pb-5">
 			<div class="row justify-content-center pb-5">
@@ -641,71 +632,69 @@
 				<p class="font-weight-semibold text-center pt-4">Стоимость обучения включает подбор преподавателя по личной
 					совместимости и онлайн доступ к платформе с учебными материалами</p>
 			</div>
-			<hr class="">
+			<hr class="p-0 m-0">
 			<div class="row justify-content-between">
-				<div class="col-md-6 text-center">
-					<img alt="" class="bg-light-1" src="assets/section-5/money-bag.svg" style="transform: translate(0%, -91%)">
+				<div class="col-md-6 text-center mb-5">
+					<img alt="" class="bg-light-1" src="assets/section-5/money-bag.svg" style="transform: translate(0%, -50%)">
 					<p class="text-secondary font-weight-semibold">Стоимость индивидуального занятия – от 750 руб./занятие</p>
 					<p class="text-secondary font-weight-semibold">Стоимость занятия в группе – от 400 руб./занятие</p>
 				</div>
-				<div class="col-md-6 text-center">
-					<img alt="" class="bg-light-1" src="assets/section-5/clock.svg" style="transform: translate(0%, -91%)">
+				<div class="col-md-6 text-center mb-5">
+					<hr class="p-0 m-0 d-md-none">
+					<img alt="" class="bg-light-1" src="assets/section-5/clock.svg" style="transform: translate(0%, -50%)">
 					<p class="text-secondary font-weight-semibold">Продолжительность урока – 60 минут</p>
 					<p class="text-secondary font-weight-semibold">Продолжительность урока – 90 минут</p>
 				</div>
 			</div>
 			<div class="row justify-content-around">
 				<div class="col-xs-12 col-md-4 p-4">
-					<div class="row">
-						<div class="col-12 col-shadow  pt-4 pl-4 pr-4 text-center">
-							<p class="text-primary font-weight-bold">Начните бесплатно</p>
-							<p class="mt-4 text-left">Получите персональные рекомендации по обучению на вводном занятии</p>
-						</div>
+					<div class="col-12 col-shadow  pt-4 pl-4 pr-4 text-center" style="height: 100%">
+						<p class="text-primary font-weight-bold">Начните бесплатно</p>
+						<p class="mt-4 text-left">Получите персональные рекомендации по обучению на вводном занятии</p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 p-4">
-					<div class="row">
-						<div class="col-12 col-shadow  pt-4 pl-4 pr-4 text-center">
-							<p class="text-primary font-weight-bold">Платите частями</p>
-							<p class="mt-4 text-left mb-0">Не надо платить за весь курс сразу: выбирайте подходящий пакет занятий по
-								соответствующей цене</p>
-						</div>
+					<div class="col-12 col-shadow  pt-4 pl-4 pr-4 text-center" style="height: 100%;">
+						<p class="text-primary font-weight-bold">Платите частями</p>
+						<p class="mt-4 text-left">Не надо платить за весь курс сразу: выбирайте подходящий пакет занятий по
+							соответствующей цене</p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 p-4">
-					<div class="row">
-						<div class="col-12 col-shadow pt-4 pl-4 pr-4 text-center">
-							<p class="text-primary font-weight-bold">Занимайтесь со скидкой</p>
-							<p class="mt-4 text-left">Получайте скидку на покупку больших пакетов занятий</p>
-						</div>
+					<div class="col-12 col-shadow  pt-4 pl-4 pr-4 text-center" style="height: 100%;">
+						<p class="text-primary font-weight-bold">Занимайтесь со скидкой</p>
+						<p class="mt-4 text-left">Получайте скидку на покупку больших пакетов занятий</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--Second form-->
+
+	<!-- ВТОРАЯ ФОРМА 100% -->
 	<section class="section-6 bg-dark-blue pt-5">
 		<div class="container pt-3">
 			<h1 class="font-weight-bold text-white text-center">Первый шаг к цели – бесплатный вводный урок</h1>
 			<section class="request-form mt-5 pb-5">
 				<form action="/admin/action.php" method="post">
-					<div class="row">
-						<div class="col">
+					<div class="row justify-content-between">
+						<div class="col-xs-12 col-lg-3 mt-4">
 							<input required class="form-control request-input" name="name" placeholder="Имя" type="text">
 						</div>
-						<div class="col">
+						<div class="col-xs-12 col-lg-3 mt-4">
 							<input required class="form-control request-input" name="email" placeholder="Email" type="email">
 						</div>
-						<div class="col">
+						<div class="col-xs-12 col-lg-3 mt-4">
 							<input required class="form-control request-input" name="telephone" placeholder="Телефон" type="text">
 						</div>
-						<button class="btn btn-warning text-white" style="padding: 11px 66px;" type="submit">Оставьте заявку
-						</button>
-					</div>
-					<div class="row d-flex justify-content-end mt-3 mb-3">
-					<span class="text-white" style="font-size: 14px; line-height: 19px;">нажимая, вы принимаете <a
-							class="text-white" style="text-decoration: underline" href="" data-toggle="modal"
-							data-target="#exampleModal">условия соглашения</a></span>
+						<div class="col-xs-12 col-lg-3 mt-4">
+							<button class="btn btn-warning text-white col-xs-12" style="width: 100%;" type="submit">Оставьте заявку
+							</button>
+						</div>
+						<div class="col-12 text-right">
+							<span class="text-white" style="font-size: 14px; line-height: 19px;">нажимая, вы принимаете <a
+									class="text-white" style="text-decoration: underline" href="" data-toggle="modal"
+									data-target="#exampleModal">условия соглашения</a></span>
+						</div>
 					</div>
 				</form>
 			</section>
@@ -713,6 +702,7 @@
 	</section>
 
 	<!-- Carousel-->
+
 	<section id="4" class="page-section section-7 bg-transparent mb-0 pt-5 pb-5">
 		<div class="container pt-5 mb-0">
 			<h1 class="text-secondary font-weight-bold text-center pt-1 mb-0">ДОСТИЖЕНИЯ НАШИХ УЧЕНИКОВ</h1>
@@ -720,7 +710,7 @@
 				<div class="carousel-inner text-center position-relative">
 					<div class="carousel-item active container" data-interval="">
 						<div class="row justify-content-center">
-							<div class="col-10">
+							<div class="col-xs-12 col-lg-10">
 								<div class="row">
 									<div class="col-xs-12 col-md-6 text-left">
 										<div class="row p-4">
@@ -1086,13 +1076,14 @@
 		</div>
 	</section>
 
-	<!--Contact us-->
-	<section class="section-8 bg-white pt-3 pb-5" style="box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05)">
-		<div class="container">
-			<h1 class="font-weight-bold text-secondary">Связаться со школой</h1>
-			<p class="text-secondary pt-3">Если у вас появился вопрос или пожелание, смело звоните нам по бесплатному номеру
+	<!-- Связаться со школой 100% -->
+	<section class="section-8 bg-white pt-5 pb-5" style="box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05)">
+		<div class="container pt-5">
+			<h1 class="font-weight-bold">Связаться со школой</h1>
+			<p class="pt-3 mb-0">Если у вас появился вопрос или пожелание, смело звоните нам по бесплатному номеру
 				или
-				связывайтесь любым другим удобным для вас способом. Поддержка школы работает 24/7.</p>
+				связывайтесь любым другим удобным для вас способом.</p>
+			<p class="">Поддержка школы работает 24/7.</p>
 			<div class="row">
 				<div class="col d-flex justify-content-start contact-us">
 					<a href="">
@@ -1111,8 +1102,7 @@
 						</div>
 					</a>
 					<a href="">
-
-						<div class="messenger-div position-relative" style="">
+						<div class="messenger-div position-relative">
 							<svg class="messenger-svg level-center" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 							     viewBox="0 0 24 24">
 								<defs>
@@ -1205,7 +1195,7 @@
 						</div>
 					</a>
 					<a href="">
-						<div class="whatsapp-div position-relative" style="">
+						<div class="whatsapp-div position-relative mr-0" style="">
 							<svg class="whatsapp-svg level-center" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
 							     viewBox="0 0 28 28">
 								<defs>
@@ -1228,11 +1218,12 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
 
 </div>
-<footer class="bg-darkest-blue pt-5" style="font-size: 14px">
+
+<!--FOOTER-->
+<footer class="bg-darkest-blue pt-5 pl-4" style="font-size: 14px">
 	<div class="container pt-2 pb-4" style="border-bottom: 1px #fff solid">
 		<div class="row">
 			<div class="col p-0 pb-5">
@@ -1242,7 +1233,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
 				<div class="row text-white">
-					<div class="col-6">
+					<div class="col-xs-12 col-md-6">
 						<div class="row position-relative">
 							<svg version="1.1" class="phone-svg" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
 							     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1341,7 +1332,7 @@
 							<span class="ml-4">8 (800) 000-00-00</span>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-xs-12 col-md-3">
 						<div class="row text-white position-relative">
 							<a href="" class="text-white ">Вконтакте</a>
 						</div>
@@ -1360,7 +1351,6 @@
 				</div>
 			</div>
 		</div>
-		<!--		<hr style="display: block; height: 1px; border: 0; border-top: 1px solid #fff;">-->
 	</div>
 	<div class="container pl-0 pb-4 pt-4 text-white">
 		© 2019 Linguasky School
