@@ -176,113 +176,101 @@ header {
   opacity: 1;
 }
 
-.contact-us .skype-svg path.a {
-  fill: #00AAF2;
+.contact-us .contact-icon {
+  height: 44px;
+  width: 44px;
+  border-radius: 4px;
+  position: relative;
+}
+.contact-us .skype-div {
+  border: 1px #00AAF2 solid;
 }
 .contact-us .skype-div:hover {
   background-color: #00AAF2;
 }
-.contact-us .skype-div:hover .skype-svg path.a {
+.contact-us .skype-div:hover .svg.skype path.a {
   fill: #fff;
 }
-.contact-us .skype-div:hover .skype-svg path.b {
+.contact-us .skype-div:hover .svg.skype path.b {
   fill: #00AAF2;
 }
-.contact-us .skype-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #00AAF2 solid;
+.contact-us .skype-div .svg.skype path.a {
+  fill: #00AAF2;
 }
-.contact-us .messenger-svg path.a {
-  fill: #1E88E5;
+.contact-us .messenger-div {
+  border: 1px #1E88E5 solid;
 }
 .contact-us .messenger-div:hover {
   background-color: #1E88E5;
 }
-.contact-us .messenger-div:hover .messenger-svg path.a {
+.contact-us .messenger-div:hover .svg.messenger path.a {
   fill: #fff;
 }
-.contact-us .messenger-div:hover .messenger-svg path.b {
+.contact-us .messenger-div:hover .svg.messenger path.b {
   fill: #1E88E5;
 }
-.contact-us .messenger-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #1E88E5 solid;
+.contact-us .messenger-div .svg.messenger path.a {
+  fill: #1E88E5;
 }
-.contact-us .vk-svg path.a {
-  fill: #5C81B3;
+.contact-us .vk-div {
+  border: 1px #5C81B3 solid;
 }
 .contact-us .vk-div:hover {
   background-color: #5C81B3;
 }
-.contact-us .vk-div:hover .vk-svg path.a {
+.contact-us .vk-div:hover .svg.vk path.a {
   fill: #fff;
 }
-.contact-us .vk-div:hover .vk-svg path.b {
+.contact-us .vk-div:hover .svg.vk path.b {
   fill: #5C81B3;
 }
-.contact-us .vk-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #5C81B3 solid;
+.contact-us .vk-div .svg.vk path.a {
+  fill: #5C81B3;
 }
-.contact-us .tm-svg path.a {
-  fill: #2CA5E0;
+.contact-us .tm-div {
+  border: 1px #2CA5E0 solid;
 }
 .contact-us .tm-div:hover {
   background-color: #2CA5E0;
 }
-.contact-us .tm-div:hover .tm-svg path.a {
+.contact-us .tm-div:hover .svg.tm path.a {
   fill: #fff;
 }
-.contact-us .tm-div:hover .tm-svg path.b {
+.contact-us .tm-div:hover .svg.tm path.b {
   fill: #2CA5E0;
 }
-.contact-us .tm-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #2CA5E0 solid;
+.contact-us .tm-div .svg.tm path.a {
+  fill: #2CA5E0;
 }
-.contact-us .viber-svg path.a {
-  fill: #7D3DAF;
+.contact-us .viber-div {
+  border: 1px #7D3DAF solid;
 }
 .contact-us .viber-div:hover {
   background-color: #7D3DAF;
 }
-.contact-us .viber-div:hover .viber-svg path.a {
+.contact-us .viber-div:hover .svg.viber path.a {
   fill: #fff;
 }
-.contact-us .viber-div:hover .viber-svg path.b {
+.contact-us .viber-div:hover .svg.viber path.b {
   fill: #7D3DAF;
 }
-.contact-us .viber-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #7D3DAF solid;
+.contact-us .viber-div .svg.viber path.a {
+  fill: #7D3DAF;
 }
-.contact-us .whatsapp-svg path.a {
-  fill: #4CAF50;
+.contact-us .whatsapp-div {
+  border: 1px #4CAF50 solid;
 }
 .contact-us .whatsapp-div:hover {
   background-color: #4CAF50;
 }
-.contact-us .whatsapp-div:hover .whatsapp-svg path.a {
+.contact-us .whatsapp-div:hover .svg.whatsapp path.a {
   fill: #fff;
 }
-.contact-us .whatsapp-div:hover .whatsapp-svg path.b {
+.contact-us .whatsapp-div:hover .svg.whatsapp path.b {
   fill: #4CAF50;
 }
-.contact-us .whatsapp-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-  border: 1px #4CAF50 solid;
+.contact-us .whatsapp-div .svg.whatsapp path.a {
+  fill: #4CAF50;
 }
 .contact-us div {
   margin-right: 24px;
