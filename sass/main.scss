@@ -170,7 +170,7 @@ header {
       width: 25px;
       height: 15px;
       content: " ";
-      background: url("../assets/right-arrow.svg") no-repeat;
+      background: url("../assets/svg/right-arrow.svg") no-repeat;
     }
   }
 }
@@ -213,6 +213,7 @@ header {
     //transform: scale(1);
   }
 }
+
 
 @import "svg";
 @import "../node_modules/bootstrap/scss/bootstrap";

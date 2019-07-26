@@ -136,7 +136,7 @@ header {
   width: 25px;
   height: 15px;
   content: " ";
-  background: url("../assets/right-arrow.svg") no-repeat;
+  background: url("../assets/svg/right-arrow.svg") no-repeat;
 }
 
 .bg-dark-blue {
@@ -374,6 +374,10 @@ header {
 }
 .fab-container .fab-icon-holder {
   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.16);
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  position: relative;
 }
 .fab-container .fab-options {
   list-style-type: none;
@@ -407,119 +411,77 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.fab-container .skype-svg path.a {
+.fab-container .svg.skype path.a {
   fill: #00AAF2;
 }
 .fab-container .skype-div:hover {
   background-color: #00AAF2;
 }
-.fab-container .skype-div:hover .skype-svg path.a {
+.fab-container .skype-div:hover .svg.skype path.a {
   fill: #fff;
 }
-.fab-container .skype-div:hover .skype-svg path.b {
+.fab-container .skype-div:hover .svg.skype path.b {
   fill: #00AAF2;
 }
-.fab-container .skype-svg path.a {
-  fill: #00AAF2;
-}
-.fab-container .skype-div:hover {
-  background-color: #00AAF2;
-}
-.fab-container .skype-div:hover .skype-svg path.a {
-  fill: #fff;
-}
-.fab-container .skype-div:hover .skype-svg path.b {
-  fill: #00AAF2;
-}
-.fab-container .skype-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .messenger-svg path.a {
+.fab-container .svg.messenger path.a {
   fill: #1E88E5;
 }
 .fab-container .messenger-div:hover {
   background-color: #1E88E5;
 }
-.fab-container .messenger-div:hover .messenger-svg path.a {
+.fab-container .messenger-div:hover .svg.messenger path.a {
   fill: #fff;
 }
-.fab-container .messenger-div:hover .messenger-svg path.b {
+.fab-container .messenger-div:hover .svg.messenger path.b {
   fill: #1E88E5;
 }
-.fab-container .messenger-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .vk-svg path.a {
+.fab-container .svg.vk path.a {
   fill: #5C81B3;
 }
 .fab-container .vk-div:hover {
   background-color: #5C81B3;
 }
-.fab-container .vk-div:hover .vk-svg path.a {
+.fab-container .vk-div:hover .svg.vk path.a {
   fill: #fff;
 }
-.fab-container .vk-div:hover .vk-svg path.b {
+.fab-container .vk-div:hover .svg.vk path.b {
   fill: #5C81B3;
 }
-.fab-container .vk-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .tm-svg path.a {
+.fab-container .svg.tm path.a {
   fill: #2CA5E0;
 }
 .fab-container .tm-div:hover {
   background-color: #2CA5E0;
 }
-.fab-container .tm-div:hover .tm-svg path.a {
+.fab-container .tm-div:hover .svg.tm path.a {
   fill: #fff;
 }
-.fab-container .tm-div:hover .tm-svg path.b {
+.fab-container .tm-div:hover .svg.tm path.b {
   fill: #2CA5E0;
 }
-.fab-container .tm-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .viber-svg path.a {
+.fab-container .svg.viber path.a {
   fill: #7D3DAF;
 }
 .fab-container .viber-div:hover {
   background-color: #7D3DAF;
 }
-.fab-container .viber-div:hover .viber-svg path.a {
+.fab-container .viber-div:hover .svg.viber path.a {
   fill: #fff;
 }
-.fab-container .viber-div:hover .viber-svg path.b {
+.fab-container .viber-div:hover .svg.viber path.b {
   fill: #7D3DAF;
 }
-.fab-container .viber-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
-}
-.fab-container .whatsapp-svg path.a {
+.fab-container .svg.whatsapp path.a {
   fill: #4CAF50;
 }
 .fab-container .whatsapp-div:hover {
   background-color: #4CAF50;
 }
-.fab-container .whatsapp-div:hover .whatsapp-svg path.a {
+.fab-container .whatsapp-div:hover .svg.whatsapp path.a {
   fill: #fff;
 }
-.fab-container .whatsapp-div:hover .whatsapp-svg path.b {
+.fab-container .whatsapp-div:hover .svg.whatsapp path.b {
   fill: #4CAF50;
-}
-.fab-container .whatsapp-div {
-  height: 44px;
-  width: 44px;
-  border-radius: 4px;
 }
 
 /*!
