@@ -1,101 +1,92 @@
 $(document).ready(function () {
-	//Fab functions
-	$('button.btn-1').show();
-	$('button.btn-2').hide();
-	$(window).on('click', function () {
-		$('.fab-options').removeClass('active');
-		if ($('.fab-options').hasClass('active')) {
-			$('button.btn-1').hide();
-			$('button.btn-2').show();
-		} else {
-			$('button.btn-2').hide();
-			$('button.btn-1').show();
-		}
-	});
-	$(".fab").on("click", function (event) {
-		$('.fab-options').toggleClass('active');
-		$('img.help-img').src = '123';
-		$('button.btn-1').toggle();
-		$('button.btn-2').toggle();
-		event.stopPropagation();
+	$.backstretch([
+		"slides/slider-1.jpg",
+		"slides/slider-2.jpg",
+		"slides/slider-3.jpg",
+		"slides/slider-4.jpg",
+		"slides/slider-5.jpg",
+		"slides/slider-6.jpg",
+		"slides/slider-7.jpg",
+		"slides/slider-8.jpg",
+	], {
+		fade: 750,
+		duration: 8000,
+		preload: 0,
+		start: 2
 	});
 
-	//Check scroll position to show or hide menu
+	let freeLessonBtn = $('.freeLessonBtn'),
+		myNav = $('.my-nav'),
+		myNavbar = $('.my-navbar'),
+		myNumber = $('.my-number');
+
 	if ($(document).scrollTop() > 1) {
-		$('.my-navbar').removeClass('hide');
-		$('.my-number').addClass('hide');
-		$('.my-btn').addClass('btn-outline-primary');
-		$('.my-btn').removeClass('border-white');
-		$('.my-btn').removeClass('text-white');
-		$('.my-nav').removeClass('bg-transparent');
-		$('.my-nav').addClass('bg-white');
-		$('.my-nav').removeClass('navbar-in-top');
+		if (myNav.hasClass('bg-transparent')) {
+			myNav.removeClass('bg-transparent');
+			myNav.removeClass('navbar-in-top');
+			myNav.addClass('bg-white');
+		}
+		if (myNavbar.hasClass('d-none')) {
+			myNumber.addClass('d-none');
+			myNavbar.removeClass('d-none');
+		}
+		if (freeLessonBtn.hasClass('border-white')) {
+			freeLessonBtn.removeClass('border-white');
+			freeLessonBtn.removeClass('text-white');
+			freeLessonBtn.addClass('border-primary');
+			freeLessonBtn.addClass('text-primary');
+		}
 	} else {
-		$('.my-number').removeClass('hide');
-		$('.my-navbar').addClass('hide');
-		$('.my-btn').removeClass('btn-outline-primary');
-		$('.my-btn').addClass('border-white');
-		$('.my-btn').addClass('text-white');
-		$('.my-nav').addClass('bg-transparent');
-		$('.my-nav').removeClass('bg-white');
-		$('.my-nav').addClass('navbar-in-top');
+		if (myNav.hasClass('bg-white')) {
+			myNav.addClass('navbar-in-top');
+			myNav.addClass('bg-transparent');
+			myNav.removeClass('bg-white');
+		}
+		if (myNumber.hasClass('d-none')) {
+			myNumber.removeClass('d-none');
+			myNavbar.addClass('d-none');
+		}
+		if (freeLessonBtn.hasClass('border-primary')) {
+			freeLessonBtn.removeClass('border-primary');
+			freeLessonBtn.removeClass('text-primary');
+			freeLessonBtn.addClass('border-white');
+			freeLessonBtn.addClass('text-white');
+		}
 	}
 
-	// Main carousel function
-	$('.fullBackground').fullClip({
-		images: ['assets/slides/slider-1.jpg',
-			'assets/slides/slider-2.jpg',
-			'assets/slides/slider-3.jpg',
-			'assets/slides/slider-4.jpg',
-			'assets/slides/slider-5.jpg',
-			'assets/slides/slider-6.jpg',
-			'assets/slides/slider-7.jpg',
-			'assets/slides/slider-8.jpg'],
-		transitionTime: 1000,
-		wait: 5000
-	});
-
-	// Change active class in navbar depend of scroll position
-	$('a[href*=#]').bind('click', function (e) {
-		e.preventDefault();
-		var target = $(this).attr("href");
-		$('html, body').stop().animate({
-			scrollTop: $(target).offset().top
-		}, 600, function () {
-			location.hash = target;
-		});
-		return false;
+	$(window).scroll(function () {
+		if ($(document).scrollTop() > 1) {
+			if (myNav.hasClass('bg-transparent')) {
+				myNav.removeClass('navbar-in-top');
+				myNav.removeClass('bg-transparent');
+				myNav.addClass('bg-white');
+			}
+			if (myNavbar.hasClass('d-none')) {
+				myNumber.addClass('d-none');
+				myNavbar.removeClass('d-none');
+			}
+			if (freeLessonBtn.hasClass('border-white')) {
+				freeLessonBtn.removeClass('border-white');
+				freeLessonBtn.removeClass('text-white');
+				freeLessonBtn.addClass('border-primary');
+				freeLessonBtn.addClass('text-primary');
+			}
+		} else {
+			if (myNav.hasClass('bg-white')) {
+				myNav.addClass('navbar-in-top');
+				myNav.addClass('bg-transparent');
+				myNav.removeClass('bg-white');
+			}
+			if (myNumber.hasClass('d-none')) {
+				myNumber.removeClass('d-none');
+				myNavbar.addClass('d-none');
+			}
+			if (freeLessonBtn.hasClass('border-primary')) {
+				freeLessonBtn.removeClass('border-primary');
+				freeLessonBtn.removeClass('text-primary');
+				freeLessonBtn.addClass('border-white');
+				freeLessonBtn.addClass('text-white');
+			}
+		}
 	});
 });
-
-
-$(window).scroll(function () {
-	if ($(document).scrollTop() > 1) {
-		$('.my-navbar').removeClass('hide');
-		$('.my-number').addClass('hide');
-		$('.my-btn').addClass('btn-outline-primary');
-		$('.my-btn').removeClass('border-white');
-		$('.my-btn').removeClass('text-white');
-		$('.my-nav').removeClass('bg-transparent');
-		$('.my-nav').addClass('bg-white');
-		$('.my-nav').removeClass('navbar-in-top');
-	} else {
-		$('.my-number').removeClass('hide');
-		$('.my-navbar').addClass('hide');
-		$('.my-btn').removeClass('btn-outline-primary');
-		$('.my-btn').addClass('border-white');
-		$('.my-btn').addClass('text-white');
-		$('.my-nav').addClass('bg-transparent');
-		$('.my-nav').removeClass('bg-white');
-		$('.my-nav').addClass('navbar-in-top');
-	}
-
-	var scrollDistance = $(window).scrollTop();
-	// Assign active class to nav links while scolling
-	$('.page-section').each(function (i) {
-		if ($(this).position().top <= scrollDistance) {
-			$('.navigation a.active').removeClass('active');
-			$('.navigation a').eq(i).addClass('active');
-		}
-	});
-}).scroll();
