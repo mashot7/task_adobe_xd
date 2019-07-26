@@ -44,8 +44,16 @@ html {
   font-weight: 600;
 }
 
-.my-btn:hover {
-  background-image: linear-gradient(90deg, #1663d5 0%, #2272e8 100%);
+.btn-hover:hover {
+  background-image: linear-gradient(90deg, #1663d5 0%, #2272e8 100%) !important;
+}
+
+.hover-75 {
+  opacity: 1 !important;
+}
+.hover-75:hover {
+  opacity: 0.75 !important;
+  color: #000;
 }
 
 .nav-item .nav-link {

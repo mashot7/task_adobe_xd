@@ -12,6 +12,6 @@ if (Input::exist('get')) {
   $request = new Request();
   $name = $request->getName(Input::get('id'))->first()->name;
   $request->delete(Input::get('id'));
-  Session::flash('delete', 'Request of ' . $name . ' removed.');
-  Redirect::to('admin/index.php');
+  Session::flash('delete', 'Запрос ' . $name . '\'а удалён.');
 }
+Redirect::to('index.php');

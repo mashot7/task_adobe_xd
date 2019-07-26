@@ -35,10 +35,9 @@ if ($user->isLoggedIn()) {
 	<div class="container">
 		<?php
 		if (Session::exists('delete')) {
-			echo '<h5 class="red lighten-3"> ' . Session::get('delete')  . '</h5>';
+			echo '<h4 class="red-text"> ' . Session::get('delete')  . '</h4>';
+			Session::delete('delete');
 		}
-    echo '<div> Lorem ipsum dolor sit amet.</div>';
-
     ?>
 		<table>
 			<thead>
@@ -46,6 +45,7 @@ if ($user->isLoggedIn()) {
 				<th>Имя</th>
 				<th>Email</th>
 				<th>Телефон</th>
+				<th>Удалить</th>
 			</tr>
 			</thead>
 
@@ -59,6 +59,7 @@ if ($user->isLoggedIn()) {
           <td>' . $result->name . '</td>
           <td>' . $result->email . '</td>
           <td>' . $result->telephone . '</td>
+          <td><a class="waves-effect waves-light btn-small deleteBtn red" href="/admin/delete.php?id=' . $result->id . '">Удалить</a></td>
         </tr>
         ';
       }
