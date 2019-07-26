@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 @font-face {
   font-family: "Segoe Print";
   src: url("/css/fonts/segoepr.ttf") format('ttf');
 }
+
 $font-family-base: Open Sans;
 
 $blue: #1663D5 !default;
@@ -48,13 +50,16 @@ $navbar-padding-y: 20px;
 
 .my-btn {
   width: 222px;
+
   &:hover {
     background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
   }
-  &.border-primary:hover{
+
+  &.border-primary:hover {
     color: #ffffff !important;
   }
 }
+
 .gradient-button {
   background-image: linear-gradient(90deg, rgba(22, 99, 213, 1) 0%, rgba(34, 114, 232, 1) 100%);
 }
@@ -89,20 +94,23 @@ $close-color: #FF0000;
 .nav-item .nav-link {
   color: #414849 !important;
   font-weight: bold;
+
   &.current {
     color: $blue !important;
   }
+
   & {
     opacity: 75% !important;
   }
 }
+
 .bg-light-1 {
-   background-color: #FCFCFC;
- }
+  background-color: #FCFCFC;
+}
 
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -113,11 +121,10 @@ header {
 }
 
 
-
 .col-shadow {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 8px !important;
   min-height: 170px;
 
   img {
@@ -177,11 +184,35 @@ header {
   background-color: #041023;
 }
 
-
 .round {
   border-radius: 100% !important;
 }
 
+.carousel .carousel-indicators {
+  position: absolute;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.carousel .carousel-indicators li {
+  height: 0;
+  width: 48px;
+  padding: 0;
+  border: 0;
+  border-bottom: 4px #E3E3E3 solid;
+  border-top: 4px transparent solid;
+  //transform: scale(0);
+  transition: all 0.3s ease;
+  transform-origin: 85% top;
+  &.active {
+    border-bottom: 4px #414849 solid;
+    border-top: 4px #414849 solid;
+    background-color: #414849;
+    height: 0;
+    opacity: 1;
+    //transform: scale(1);
+  }
+}
 
 @import "svg";
 @import "../node_modules/bootstrap/scss/bootstrap";
