@@ -33,6 +33,13 @@ require_once 'navbar.php';
 if ($user->isLoggedIn()) {
 	?>
 	<div class="container">
+		<?php
+		if (Session::exists('delete')) {
+			echo '<h5 class="red lighten-3"> ' . Session::get('delete')  . '</h5>';
+		}
+    echo '<div> Lorem ipsum dolor sit amet.</div>';
+
+    ?>
 		<table>
 			<thead>
 			<tr>
